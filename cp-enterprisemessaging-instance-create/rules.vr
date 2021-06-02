@@ -1,0 +1,29 @@
+[VALIDATE_1]
+###Rule
+single-choice
+
+###Question
+The rules of an SAP Event Mesh queue are defined while ...
+
+###Match
+[ ] ... creating a queue.
+[x] ... creating an instance.
+[ ] ... creating a queue subscription.
+
+[VALIDATE_1]
+[VALIDATE_2]
+###Rule
+multiple-choice
+
+###Question
+Which of the following protocols connection details are created by default
+ while creating a service-key and those protocols related information need
+ not be provided in the service-descriptor while creating an instance of
+ SAP Event Mesh.
+
+###Match
+[ ] REST
+[x] AMQP
+[x] MQTT
+
+[VALIDATE_2]
