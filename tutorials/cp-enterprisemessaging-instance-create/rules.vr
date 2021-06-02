@@ -7,7 +7,7 @@ The rules of an SAP Event Mesh queue are defined while ...
 
 ###Match
 [ ] ... creating a queue.
-[X] ... creating an instance.
+[x] ... creating an instance.
 [ ] ... creating a queue subscription.
 
 [VALIDATE_1]
@@ -23,7 +23,7 @@ Which of the following protocols connection details are created by default
 
 ###Match
 [ ] REST
-[X] AMQP
-[X] MQTT
+[x] AMQP
+[x] MQTT
 
 [VALIDATE_2]
