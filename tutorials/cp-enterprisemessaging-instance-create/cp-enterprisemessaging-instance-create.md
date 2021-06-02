@@ -91,10 +91,8 @@ primary_tag: products>sap-event-mesh
 
     >Each Event Mesh instance represents a message client. Each message client has a set of queues and topics to which it is associated. All these queues and topics belonging to one message client are exposed to other message clients using its unique credentials. This entire set of queues and topics within different message clients in a subaccount can send and receive messages or events to each other using the service.  
 
-    [VALIDATE_1]
-
-
-    [ACCORDION-END]
+[VALIDATE_1]
+[ACCORDION-END]
 
 [ACCORDION-BEGIN [Step 2: ](Understanding Service Key of SAP Event Mesh)]
 
