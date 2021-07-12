@@ -5,7 +5,7 @@ auto_validation: true
 time: 20
 author_name: Thomas Jung
 author_profile: https://github.com/jung-thomas
-tags: [ tutorial>beginner, products>sap-hana, products>sap-hana-cloud, products>sap-business-application-studio]
+tags: []
 primary_tag: products>sap-hana
 ---
 
