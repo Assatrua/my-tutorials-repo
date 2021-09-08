@@ -22,7 +22,7 @@ tags: [ tutorial>intermediate, topic>abap-development  ]
 
 ---
 
-In this tutoriasdal, you will create an ABAP Daemon that should act as a bi-directional protocol converter between MQTT and AMC. The daemon should receive MQTT messages, convert them to PCP messages, and forward them via an ABAP Messaging Channel (AMC) to other applications. Forwarding also works in the reverse direction.
+In this tutoriasdal, you will create an ABAP Daeasdmon that should act as a bi-directional protocol converter between MQTT and AMC. The daemon should receive MQTT messages, convert them to PCP messages, and forward them via an ABAP Messaging Channel (AMC) to other applications. Forwarding also works in the reverse direction.
 
 [ACCORDION-BEGIN [Step 1: ](Create an ABAP Daemon class)]
 Create a new ABAP class **`ZCL_TUTORIAL_MQTT_DAEMON`** extending the base class `CL_ABAP_DAEMON_EXT_BASE`.
