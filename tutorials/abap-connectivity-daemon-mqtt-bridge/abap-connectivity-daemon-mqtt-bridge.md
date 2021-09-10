@@ -154,7 +154,6 @@ ENDMETHOD.
 ```
 
 [DONE]
-[ACCORDION-END]
 
 ### (Implement static methods)
 In this step, you will create two static methods `START` and `STOP`. They are used to instantiate and terminate your ABAP Daemon and will be called by another ABAP Program.
