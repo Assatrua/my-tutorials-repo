@@ -42,7 +42,6 @@ DATA: mv_subscription_topic TYPE string,
       mo_client             TYPE REF TO if_mqtt_client.
 ```
 You will need them later.
-
 [DONE]
 
 ### (Create an ABAP Messaging Channel)
@@ -67,7 +66,6 @@ Specify further details regarding the channel. Select **`Client`** as the *Activ
 ![Adjusting an ABAP Messaging Channel](create-abap-messaging-channel-3.png)
 
 Finally, **activate your AMC Application** by pressing **`Ctrl+F3`**.
-
 [DONE]
 
 ### (Implement ABAP Daemon events)
@@ -152,7 +150,6 @@ METHOD if_abap_daemon_extension~on_stop.
   ENDTRY.
 ENDMETHOD.
 ```
-
 [DONE]
 
 ### (Implement static methods)
@@ -216,7 +213,6 @@ METHOD stop.
   ENDLOOP.
 ENDMETHOD.
 ```
-
 [DONE]
 
 ### (Handle incoming MQTT messages)
@@ -255,7 +251,6 @@ METHOD if_mqtt_event_handler~on_message.
   ENDTRY.
 ENDMETHOD.
 ```
-
 [DONE]
 
 ### (Handle AMC messages)
@@ -285,7 +280,6 @@ METHOD if_amc_message_receiver_pcp~receive.
   ENDTRY.
 ENDMETHOD.
 ```
-
 [DONE]
 
 ### (Run the ABAP Daemon)
@@ -300,7 +294,6 @@ zcl_tutorial_mqtt_daemon=>start( iv_daemon_name = 'mqtt_daemon' iv_subscription_
 **Activate your program** `Z_TUTORIAL_MQTT_DAEMON_START` **by pressing `Ctrl+F3`**. Afterwards, **run it as ABAP Application (Console) by pressing `F9`**.
 
 > Your daemon should now be running in the background. You can check this in the transaction `SMDAEMON`.
-
 [DONE]
 
 ### (Prepare interaction with the ABAP Daemon)
@@ -383,7 +376,6 @@ ENDCLASS.
 As these two programs will need to access your ABAP Messaging Channel, make sure to **add them to the *Authorized Programs* section** of the AMC Application. **Activate the AMC Application** afterwards.
 
 ![Add authorized programs to the ABAP Messaging Channel](add-authorized-programs.png)
-
 [DONE]
 
 ### (Interact with the ABAP Daemon)
@@ -411,5 +403,4 @@ While the class is running, you can publish MQTT messages under the topic `abapt
 This triggers the forwarding process and your ABAP class will output the received AMC message in the console:
 
 ![The forwarded MQTT message was received via the AMC](console-received-message.png)
-
 [VALIDATE_1]
