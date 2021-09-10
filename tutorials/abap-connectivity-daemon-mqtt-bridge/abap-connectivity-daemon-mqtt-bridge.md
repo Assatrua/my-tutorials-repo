@@ -8,7 +8,7 @@ parser: parser
 ---
 # Forward MQTT and AMC Messages Using an ABAP Daemon
 
-! Forward MQTT and AMC Messages using an ABAP Daemon.
+! Forward MQTT and AMC Messages using an ABasdAP Daemon.
 
 ### Prerequisites
   - The AaBAP MQTT Client is available on **ABAP Platform 1809** and above.
