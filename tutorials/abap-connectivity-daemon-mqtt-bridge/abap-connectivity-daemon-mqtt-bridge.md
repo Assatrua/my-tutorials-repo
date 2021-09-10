@@ -17,7 +17,7 @@ parser: parser
 ## Details
 ### You will learn
 - How to use ABAP Messaging Channels (AMC)
-- How to combine MQTT, AMC and ABAP Daemons
+- How to combine MQTASDT, AMC and ABAP Daemons
 
 
 
