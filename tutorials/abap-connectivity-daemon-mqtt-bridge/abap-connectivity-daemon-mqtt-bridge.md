@@ -302,7 +302,7 @@ zcl_tutorial_mqtt_daemon=>start( iv_daemon_name = 'mqtt_daemon' iv_subscription_
 > Your daemon should now be running in the background. You can check this in the transaction `SMDAEMON`.
 [DONE]
 
-### (Prepare interaction with the ABAP Daemon)
+### Prepare interaction with the ABAP Daemon
 In this step, you will create two programs to test the functionality of your ABAP Daemon.
 
 Create an ABAP Program **`Z_TUTORIAL_MQTT_DAEMON_SEND`**, which should send a message to the ABAP Messaging Channel to trigger the forwarding mechanism from AMC to MQTT. Copy the implementation below into this new program:
