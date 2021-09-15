@@ -6,7 +6,7 @@ primary_tag: topic>abap-development
 tags: [ tutorial>intermediate, topic>abap-development  ]
 parser: parser
 ---
-# Forward MQTT and AMC Messages Using an ABAP Daemon
+# Forward MQTT and AMC Messages Using an ABAP Daessmon
 
 <!--description--> Forward MQTT and AMC Messages using an ABasdAP Daemon.
 
