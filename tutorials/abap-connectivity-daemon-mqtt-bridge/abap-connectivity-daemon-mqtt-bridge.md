@@ -33,7 +33,7 @@ Create a new ABAP class **`ZCL_TUTORIAL_MQTT_DAEMON`** extending the base class 
 
 As you can see, there is an error in line 1 since the necessary abstract methods have not been implemented yet. Click on the light bulb next to the line number and select **Add 9 unimplemented methods** to resolve this:
 
-<!--border-->![Add unimplemented methods in ABAP Development Tools](add-unimplemented-methods.png)
+<!--border--> ![Add unimplemented methods in ABAP Development Tools](add-unimplemented-methods.png)
 
 Add the following variables to the `PRIVATE SECTION` of your class definition:
 ```abap
