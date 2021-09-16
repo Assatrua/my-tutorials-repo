@@ -43,7 +43,7 @@ DATA: mv_subscription_topic TYPE string,
 ```
 You will need them later.
 
-[DONE]
+<!--DONE-->
 
 #### Create an ABAP Messaging Channel
 Create a new ABAP Messaging Channel (AMC). To do so, click on **File** > **New** > **Other...** or press **`Ctrl+N`**.
@@ -68,7 +68,7 @@ Specify further details regarding the channel. Select **`Client`** as the *Activ
 
 Finally, **activate your AMC Application** by pressing **`Ctrl+F3`**.
 
-[DONE]
+<!--DONE-->
 
 #### Implement ABAP Daemon events
 
@@ -153,7 +153,7 @@ METHOD if_abap_daemon_extension~on_stop.
 ENDMETHOD.
 ```
 
-[DONE]
+<!--DONE-->
 
 #### Implement static methods
 In this step, you will create two static methods `START` and `STOP`. They are used to instantiate and terminate your ABAP Daemon and will be called by another ABAP Program.
@@ -217,7 +217,7 @@ METHOD stop.
 ENDMETHOD.
 ```
 
-[DONE]
+<!--DONE-->
 
 #### Handle incoming MQTT messages
 
@@ -256,7 +256,7 @@ METHOD if_mqtt_event_handler~on_message.
 ENDMETHOD.
 ```
 
-[DONE]
+<!--DONE-->
 
 #### Handle AMC messages
 As your ABAP Daemon shall also receive AMC messages, you will need to add another interface to your class definition:
@@ -286,7 +286,7 @@ METHOD if_amc_message_receiver_pcp~receive.
 ENDMETHOD.
 ```
 
-[DONE]
+<!--DONE-->
 
 #### Run the ABAP Daemon
 **Activate your ABAP Daemon class by pressing `Ctrl+F3`.**
@@ -300,7 +300,7 @@ zcl_tutorial_mqtt_daemon=>start( iv_daemon_name = 'mqtt_daemon' iv_subscription_
 **Activate your program** `Z_TUTORIAL_MQTT_DAEMON_START` **by pressing `Ctrl+F3`**. Afterwards, **run it as ABAP Application (Console) by pressing `F9`**.
 
 > Your daemon should now be running in the background. You can check this in the transaction `SMDAEMON`.
-[DONE]
+<!--DONE-->
 
 #### Prepare interaction with the ABAP Daemon
 In this step, you will create two programs to test the functionality of your ABAP Daemon.
@@ -383,7 +383,7 @@ As these two programs will need to access your ABAP Messaging Channel, make sure
 
 ![Add authorized programs to the ABAP Messaging Channel](add-authorized-programs.png)
 
-[DONE]
+<!--DONE-->
 
 #### Interact with the ABAP Daemon
 
