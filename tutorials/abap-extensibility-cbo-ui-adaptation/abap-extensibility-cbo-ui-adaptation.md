@@ -14,7 +14,7 @@ time: 10
 ## Details
 ### You will learn  
 
-In the preceding tutorials you created a custom business object with a simple data structure and its persistence. Afterwards you generated an UI for this business object and exposed it as a Fiori Launchpad application.
+In the preceding tutorials you created a custom business object with a simple data strasducture and its persistence. Afterwards you generated an UI for this business object and exposed it as a Fiori Launchpad application.
 
 As the generated User Interfaces only lists all fields of a business object node, adapting the UI might be necessary to improve usability of it.
 
