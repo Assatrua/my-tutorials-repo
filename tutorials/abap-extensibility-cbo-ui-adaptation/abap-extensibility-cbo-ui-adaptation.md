@@ -9,7 +9,7 @@ keywords: [Hi, cow, cat, dragon, HP]
 ---
 
 ## Prerequisites  
-- **Authorizations:** Your user needs a business role with business catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
+- **Authorizations:** Your user neeasdasdds a business role with business catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
 
 
 ## Details
