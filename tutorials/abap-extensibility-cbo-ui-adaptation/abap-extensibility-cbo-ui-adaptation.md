@@ -17,7 +17,7 @@ keysords: [qwe,qweqwe,qweqweqwe,qwe,qwe,qwe]
 
 In the preceding tutorials you created a custom business object with a simple data strasducture and its persistence. Afterwards you generated an UI for this business object and exposed it as a Fiori Launchpad application.
 
-As the generated User Interfaces only lists all fields of a business object node, adapting the UI might be necessary to improve usability of it.
+As the generated User Interfaces only lists all fields ofasd a business object node, adapting the UI might be necessary to improve usability of it.
 
 >Before done **UI Generation** and here shown **UI Adaptation** are so called **In-App Extensibility** features done completely inside a S/4HANA system. They are key user functionality with limited possibilities. UI Adaptation has effect on all users in the sdfsystem.
 >
