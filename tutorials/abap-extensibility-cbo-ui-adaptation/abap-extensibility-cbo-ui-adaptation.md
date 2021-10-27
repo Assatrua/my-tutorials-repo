@@ -8,7 +8,7 @@ time: 10
 ---
 
 ## Prerequisites  
-- **Authorizations:** Your user neeaasdsdasdds a business roasdle wasdith business catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
+- **Authorizations:** Your user neeaasdsdasasddds a business roasdle wasdith business catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
 
 
 ## Details
