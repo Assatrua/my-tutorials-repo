@@ -1,6 +1,6 @@
 ---
-title: Adapt the UI of a Business Object
-description: Adapt the UI of a business object inside SAP S/4Hana Cloud, shown at the generated UI of a Custom Business Object
+title: Adapt the UI of a Business Object1
+description: Adapt1 the UI of a business object inside SAP S/4Hana Cloud, shown at the generated UI of a Custom Business Object
 auto_validation: true
 primary_tag: topic>abap-extensibility
 tags: [  tutorial>beginner, topic>abap-extensibility, topic>cloud, products>sap-s-4hana]
