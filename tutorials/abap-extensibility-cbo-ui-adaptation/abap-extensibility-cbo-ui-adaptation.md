@@ -9,7 +9,7 @@ keywords: [asd]
 ---
 
 ## Prerequisites  
-- **Authorizations:** Your uness catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
+- **Authorizations:** Your ussness catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
 
 
 ## Details
