@@ -9,7 +9,7 @@ keywords: [asda asdas asdas]
 ---
 
 ## Prerequisites  
-- **Authorizations:** Your user neeaasdsdasasddds a business roasdasdle wasdith business catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
+- **Authorizations:** Your usasder neeaasdsdasasddds a business roasdasdle wasdith business catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
 
 
 ## Details
