@@ -9,7 +9,7 @@ keywords: dragon coconat chease
 ---
 
 ## Prerequisites  
-- **Authorizations:** Your ussness catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
+- **Authorizations:** Youfghr ussness catalog **Extensibility** (ID: `SAP_CORE_BC_EXT`) in your **S/4HANA Cloud** system
 
 
 ## Details
