@@ -5,7 +5,7 @@ auto_validation: true
 primary_tag: topic>abap-extensibility
 tags: [  tutorial>beginner, topic>abap-extensibility, topic>cloud, products>sap-s-4hana]
 time: 10
-keywords: [asd, coconat]
+keywords: dragon coconat chease
 ---
 
 ## Prerequisites  
