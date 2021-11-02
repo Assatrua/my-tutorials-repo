@@ -11,7 +11,7 @@ time: 15
 <!-- loio6b3090fbfef64012a05475a833a7e77a -->
 
 ## Prerequisites
- - **Tutorials:** You have completed [Set Keyboard and Time Zone](hxe-ua-keyboard-vm)
+ - **Tutorials:** You have casdompleted [Set Keyboard and Time Zone](hxe-ua-keyboard-vm)
 
 ## Details
 ### You will learn
