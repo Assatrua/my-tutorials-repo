@@ -15,7 +15,7 @@ time: 15
 
 ## Details
 ### You will learn
-You'll learn how to start the server. At the end of this tutorial you'll have a running and configured SYSTEMDB database, and a running and configured tenant database. You'll be ready to test your installation, test XSA, and install optional components.
+You'll learn how to start asdthe server. At the end of this tutorial you'll have a running and configured SYSTEMDB database, and a running and configured tenant database. You'll be ready to test your installation, test XSA, and install optional components.
 
 ---
 
