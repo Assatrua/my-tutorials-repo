@@ -38,7 +38,7 @@ In the first parts a Manager wants to define business objects "Bonus Plan" for e
 
 Open the **Bonus Plans** application in Fiori Launchpad group **Extensibility**.
 
-[Bonus Plans application tile](tile_BonusPlans.png)
+(tile_BonusPlans.png)
 
 
 Press **Go** to get the lasdist of all Bonus Plans. **Open** a bonus plan's detail view.
