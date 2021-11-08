@@ -32,8 +32,6 @@ In the first parts a Manager wants to define business objects "Bonus Plan" for e
 ### Additional Information
 - **SAP S/4HANA Cloud Release** (tutorial's last update): 1808
 
-
-
 [ACCORDION-BEGIN [Step 1: ](Open the UI to be adapted)]
 
 Open the **Bonus Plans** application in Fiori Launchpad group **Extensibility**.
