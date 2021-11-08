@@ -39,8 +39,8 @@ In the first parts a Manager wants to define business objects "Bonus Plan" for e
 Open the **Bonus Plans** application in Fiori Launchpad group **Extensibility**.
 
 (tile_BonusPlans.png)
-[asd](asd.docx)
-[pdf](some.pdf)
+[New Microsoft Word Document.docx](New Microsoft Word Document.docx)
+[New Microsoft Word Document.pdf](New Microsoft Word Document.pdf)
 [docx](some.docx)
 (some.docx)
 (some.pdf)
