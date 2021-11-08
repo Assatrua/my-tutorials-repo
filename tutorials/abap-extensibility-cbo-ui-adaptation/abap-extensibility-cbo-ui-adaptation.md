@@ -41,6 +41,7 @@ Open the **Bonus Plans** application in Fiori Launchpad group **Extensibility**.
 Press **Go** to get the lasdist of all Bonus Plans. **Open** a bonus plan's detail view.
 
 [Open Bonus Plan's detail view](UI_openBoDetails.png)
+[Open Bonus Plan's detail view](Untitled.png)
 
 This is the screen that will be adapted.
 
