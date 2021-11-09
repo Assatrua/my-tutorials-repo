@@ -163,7 +163,7 @@ Use the **POST /document/jobs** endpoint to upload to the service any document f
 
 >- [Sample Invoice 3](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/cp-aibus-dox-swagger-ui/data/sample-invoice-3.pdf)
 
->- [Sample Invoice 3](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/cp-aibus-dox-swagger-ui/data/featured.txt)
+>- [Sample Invoice 3](https://raw.githubusercontent.com/Assatrua/my-tutorials-repo/main/tutorials/cp-aibus-dox-swagger-ui/data/groovy.groovy)
 
 >- [Sample Invoice 3](https://github.com/downloads/Assatrua/my-tutorials-repo/tree/main/tutorials/cp-aibus-dox-swagger-ui/data/groovy.groovy)
 
