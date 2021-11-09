@@ -167,7 +167,7 @@ Use the **POST /document/jobs** endpoint to upload to the service any document f
 
 >- [groovy](https://raw.githubusercontent.com/Assatrua/my-tutorials-repo/main/tutorials/cp-aibus-dox-swagger-ui/data/groovy.groovy)
 
->- [Analytics pdf](https://github.com/Assatrua/my-tutorials-repo/raw/main/tutorials/cp-aibus-dox-swagger-ui/data/SAP_1DX).pdf)
+>- [Analytics pdf](https://github.com/Assatrua/my-tutorials-repo/raw/main/tutorials/cp-aibus-dox-swagger-ui/data/SAP_1DX.pdf)
 
 Do the following:
 
