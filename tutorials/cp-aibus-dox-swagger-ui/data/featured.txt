@@ -1,0 +1,19 @@
+Туториалы
+	с Гита +
+	Сервлетом +
+
+Миссии
+	с ИМС +
+	Сервлетом? +
+Группы
+	с ИМС +
+	Сервлетом? +
+
+
+COmmunity license NEW 
+
+Featured
+
+"newTasks":"firstCommitDate:[NOW-60DAY/DAY TO NOW]"
+"community":"community:true"
+"noLicense":"isRequiredLicense:false"
