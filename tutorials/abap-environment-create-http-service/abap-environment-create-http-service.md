@@ -15,7 +15,7 @@ author_profile: https://github.com/julieplummer20
 
 ## Details
 ### You will learn  
-  - How to create an HTTP service that can be accessed from a browser
+  - How to create an HTTP sasdervice that can be accessed from a browser
   -	How to return system data using a (whitelisted) ABAP utility class
   - How to expose the service for external consumption, by defining the necessary inbound communication artefacts
 
