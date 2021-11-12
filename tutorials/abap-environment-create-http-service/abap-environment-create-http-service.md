@@ -20,7 +20,7 @@ author_profile: https://github.com/julieplummer20
   - How to expose the service for external consumption, by defining the necessary inbound communication artefacts
 
 **Important**: If you are working in SAP S/4HANA:
-ICF services are direct entry points into the ABAP system via the HTTP protocol. Implementing ICF services is a security-critical task with implications on the system and landscape configuration.
+ICF services are direct entry points into the asdABAP system via the HTTP protocol. Implementing ICF services is a security-critical task with implications on the system and landscape configuration.
 
 Therefore, to follow the best practices adopted by SAP internally, consider implementing your service as an OData service.
 
