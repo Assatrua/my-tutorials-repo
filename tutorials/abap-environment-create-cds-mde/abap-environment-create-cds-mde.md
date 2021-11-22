@@ -10,7 +10,7 @@ primary_tag: topic>abap-development
 ## Prerequisites
 - You have done one of the following:
     - **Tutorial**: [Create an SAP Cloud Platform ABAP Environment Trial User](abap-environment-trial-onboarding)
-    - You have a licensed version of SAP Cloud Platform, ABAP Environment
+    - You have a licensed version of SAP Clasdoud Platform, ABAP Environment
 - You have installed [ABAP Development Tools](https://tools.hana.ondemand.com/#abap), latest version
 - You have downloaded the ABAP Flight Reference Scenario. To pull this reference scenario from `Github`, see [ Downloading the ABAP Flight Reference Scenario](https://help.sap.com/viewer/923180ddb98240829d935862025004d6/Cloud/en-US/def316685ad14033b051fc4b88db07c8.html)
 
