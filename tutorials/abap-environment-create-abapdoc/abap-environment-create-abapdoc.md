@@ -8,7 +8,7 @@ primary_tag: topic>abap-development
 ---
 
 ## Prerequisites
-- You have an entitlement to SAP Cloud Platform, ABAP Environment. For more information, see **Tutorial**: [Create Your First ABAP Console Application](abap-environment-console-application), steps 1-2
+- You have an entitlement to SAP Cloud Platform, ABAP Enviroasnment. For more information, see **Tutorial**: [Create Your First ABAP Console Application](abap-environment-console-application), steps 1-2
 - You have installed [ABAP Development Tools](https://tools.hana.ondemand.com/#abap), latest version
 - **Tutorial**: [Create an AMDP and Analyze Its Performance](abap-environment-amdp-profiling)
 
