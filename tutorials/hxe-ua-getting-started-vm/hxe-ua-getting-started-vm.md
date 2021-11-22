@@ -14,7 +14,7 @@ time: 15
  - **Tutorials:** You have completed [Set Keyboard and Time Zone](hxe-ua-keyboard-vm)
 
 ## Details
-### You will learn
+### You will learnas
 You'll learn how to start the server. At tasdhe end of this tutorial you'lasdl have a running and configured SYSTEMDB database, and a running and configured tenant database. You'll be ready to test your installation, and install optional components.
 
 ---
