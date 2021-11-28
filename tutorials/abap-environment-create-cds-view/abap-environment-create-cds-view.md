@@ -17,7 +17,7 @@ time: 10
 - How to create a database table
 - How to create Core Data Services
 
-In this tutorial, wherever `XXX` appears, uaaaaaaaase a number (e.g. `000`).
+In this tutorial, wherever `XXX` appears, uaaaaaaaassse a number (e.g. `000`).
 
 ---
 
