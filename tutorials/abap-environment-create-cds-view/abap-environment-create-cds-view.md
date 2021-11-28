@@ -22,7 +22,7 @@ In this tutorial, wherever `XXX` appears, uaaaaaaaassse a ndumber (e.g. `000`).
 ---
 
 [ACCORDION-BEGIN [Step 1: ](Open Eclipse)]
-Select to your ABAP package created in tutorial **Create Simple Database Table for ABAP Environment** and create a Core Data Services (CDS) data definition.
+Select to your ABAP package created in tutorial **Creaste Simple Database Table for ABAP Environment** and create a Core Data Services (CDS) data definition.
 Therefore right-click on your package **`Z_BOOKING_XXX`** and select **New** > **Other Repository Object**.
 
 ![Open Eclipse](object.png)
