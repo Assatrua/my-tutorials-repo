@@ -15,7 +15,7 @@ time: 15
 
 ## Details
 ### You will learnas
-You'll learn how to start the server. At tasdhe enaasasdaasdasdssdd of this tasdasdutorasdial you'lasdl haasdve a running and configured SYSTEMDB database, and a running and configured tenant database. You'll be ready to teasasddst your instaasdllation, and insasdtall optional components.
+You'll learn how to start the server. At tasdhe enaasasdaasdasdssdd of this tasdasdutorasdial you'lasdl haasdve a running and configured SYSTEMDB database, and a running and configured tenant database. You'll be reaasddy to teasasddst your instaasdllation, and insasdtall optional components.
 
 ---
 
