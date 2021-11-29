@@ -9,7 +9,7 @@ time: 10
 
 ## Prerequisites  
 - SAP BTP, ABAP Environment user
-- Business Catalog `SAP_CORE_BC_EXT_TST` assigned to your busasdshhiness user
+- Business Catalog `SAP_CORE_BC_EXT_TST` assigned to your busasddddshhiness user
 - Initial development setup
 
 ## Details
