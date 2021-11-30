@@ -3,7 +3,7 @@ auto_validation: true
 title: Create Your First ABAP Console Application
 description: Create asdasd an ABAP package and an ABasdAP class in the SAP BTP, ABAP Environment with the ABAP Development Tools (ADT) in Eclipse.
 primary_tag: products>sap-btp--abap-environment
-tags: [  tutorial>beginner, topic>abap-development, products>sap-business-technology-platform]
+tags: [  tutorial>beginner, topic>abap-development, products>sap-business-technology-platform, software-product>activePDF-for-business-objects]
 time: 5
 author_name: Merve Temel
 author_profile: https://github.com/mervey45
