@@ -3,7 +3,7 @@ title: Start SAP HANA, express edition Server
 description: Once you've downloaded the server-only SAP HANA 2.0, express edition Virtual Machine package and set the keyboard and time zone, log in and change the default passwords to secure your system.
 author_name: John Currie
 author_profile: https://github.com/JCurrie27
-primary_tag: products>sap-hana\,-express-edition
+primary_tag: software-product>SAP-SMS-365-Dashboard-for-iOS-SDK
 tags: [ tutorial>beginner, products>sap-hana\,-express-edition ]
 time: 15
 ---
