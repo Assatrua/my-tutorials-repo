@@ -3,7 +3,7 @@ title: Create a Service Consumption Model
 description: Create an OData service consumption model in an SAP Business Technology Platform, ABAP Environment instance. In a second instance, prepare it for consumption.
 auto_validation: true
 time: 45
-tags: [ tutorial>intermediate, products>sap-btp--abap-environment, products>sap-business-technology-platform, topic>abap-connectivity, tutorial>license]
+tags: [ tutorial>intermediate, products>sap-btp--abap-environment, software-product>sap-business-technology-platform, topic>abap-connectivity, tutorial>license]
 primary_tag: topic>abap-development
 author_name: Julie Plummer
 author_profile: https://github.com/julieplummer20
