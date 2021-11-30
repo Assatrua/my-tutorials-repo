@@ -4,7 +4,7 @@ description: Get machine learning model predictions for the documents you upload
 auto_validation: true
 time: 15
 tags: [tutorial>beginner, topic>machine-learning, topic>artificial-intelligence, topic>cloud, software-product>sap-business-technology-platform, software-product>sap-ai-business-services, software-product>document-information-extraction]
-primary_tag: topic>Technology-Platform
+primary_tag: software-product>Technology-Platform
 ---
 
 ## Details
