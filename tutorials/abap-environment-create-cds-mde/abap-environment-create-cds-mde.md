@@ -3,7 +3,7 @@ title: Create an ABAP Core Data Services (CDS) View in SAP Cloud Platform, ABAP 
 description: Create a CDS View, display it in Fiori Elements preview, and enhance its appearances using built-in annotations
 auto_validation: true
 time: 45
-tags: [ tutorial>beginner, software-product>Crystal-Reports-Server-N-tier]
+tags: [ tutorial>beginner, software-product>analytic-applications]
 primary_tag: topic>abap-development
 ---
 
