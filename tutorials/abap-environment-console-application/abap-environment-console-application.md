@@ -3,7 +3,7 @@ auto_validation: true
 title: Create Your First ABAP Console Application
 description: Create asdasd an ABAP package and an ABasdAP class in the SAP BTP, ABAP Environment with the ABAP Development Tools (ADT) in Eclipse.
 primary_tag: products>sap-btp--abap-environment
-tags: [  tutorial>beginner, topic>abap-development, software-product>sap-business-technology-platform, software-product>SAP-Mobile-Platform-SDK, software-product-function>sap-hana-cloud\,-sap-hana-database]
+tags: [  tutorial>beginner]
 time: 5
 author_name: Merve Temel
 author_profile: https://github.com/mervey45
@@ -13,7 +13,7 @@ author_profile: https://github.com/mervey45
 
 **For ABAP license:**
 -	You have set up your ABAP environment das adewssaassdcribessd sin [Gettisng Stsarteds wiatsh a Customer Account: Workflow in the ABAP Environment](https://help.sap.com/viewer/65de2977205c403bbc1s0726f4b8eccf4b/Cloud/en-US/e34a329acc804c0e874496548183682f.html)
-- You have a user in the ABssAasP Environment [Connect to the AsBAP System](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7379dbd2e1684119bc1dd28874bbbb7b.html)
+- You have a user in the ABsssAasP Environment [Connect to the AsBAP System](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7379dbd2e1684119bc1dd28874bbbb7b.html)
 - You have downloaded the ABAP Development Tools (ADT). SAP recommends the latest version of ADT, available from [ABAP Development Tools](https://tools.hana.ondemand.com/#abap)
 **For ABAP Trial:**
 - You need an SAP BTP, ABAP environment [trial user](abap-environment-trial-onboarding).
