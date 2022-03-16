@@ -4,7 +4,7 @@ description: Create a database table in SAP Cloud Platform ABAP Environment and 
 primary_tag: products>sap-hana-cloud
 tags: [tutorial>beginner, topic>api, software-product>Analytics, topic>Business-Development]
 time: 130
-author_name: Merves Temels II
+author_name: Merves Temels III
 author_profile: https://github.com/mervey45
 creator_name: Merve Temel
 creator_profile: https://github.com/mervey45
