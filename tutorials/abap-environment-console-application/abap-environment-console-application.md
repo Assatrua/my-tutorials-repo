@@ -1,157 +1,150 @@
 ---
-auto_validation: true
-title: Create Your First ABAP Console Application22222
-description: Create asdasd an ABAP package and an ABasdAP class in the SAP BTP, ABAP Environment with the ABAP Development Tools (ADT) in Eclipse.
-primary_tag: products>sap-btp--abap-environment
-tags: [  tutorial>beginner]
-time: 5
+title: Test Blue Create a database table in SAP Cloud Platform
+description: Create a database table in SAP Cloud Platform ABAP Environment and prefill it with data. 
+primary_tag: products>sap-hana-cloud
+tags: [tutorial>beginner, topic>api, software-product>Analytics, topic>Business-Development]
+time: 130
 author_name: Merve Temel
 author_profile: https://github.com/mervey45
 ---
 
-## Prerequisites  
-
-**For ABAP license:**
--	You have set up your ABAPs enssvironmessnt das adewssaassdcrssibessd sin [Gettisng Stsarteds wiatsh a Customer Account: Workflow in the ABAP Environment](https://help.sap.com/viewer/65de2977205c403bbc1s0726f4b8eccf4b/Cloud/en-US/e34a329acc804c0e874496548183682f.html)
-- You have a user in the ABsssAasP Envsironment [Connect to the AsBAP System](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7379dbd2e1684119bc1dd28874bbbb7b.html)
-- You have downloaded the ABAP Development Tools (ADT). SAP recommends the latest version of ADT, available from [ABAP Development Tools](https://tools.hana.ondemand.com/#abap)
-**For ABAP Trial:**
-- You need an SAP BTP, ABAP environment [trial user](abap-environment-trial-onboarding).
-- You have downloaded the ABAP Development Tools (ADT). SAP recommends the latest version of ADT, available from [ABAP Development Tools](https://tools.hana.ondemand.com/#abap)
-
 ## Details
 ### You will learn
-  - How to create an ABAP cloud project in ADT
-  - How to create an ABAP package
-  - How to create an ABAP class
-  - How to execute the application console
+- How to create a database table
+- How to `prefill` your database table with data
 
-In this tutorial, wherever `XXX` appears, use a number (e.g. `000`) or your initials.
-
-For more information, see:
-- [SAP Help Portal: What is SAP BTP](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/6a2c1ab5a31b4ed9a2ce17a5329e1dd8.html)
+In this tutorial, wherever `XXX` appears, use a number (e.g. `000`).
 
 ---
 
-[ACCORDION-BEGIN [Step 1: ](Open the ABAP Development Tools (ADT) )]
-Open the ADT and change to the ABAP perspective, using the menu.
+[ACCORDION-BEGIN [Step 1: ](Open Eclipse)]
+Open Eclipse, and select **New** > **ABAP Package**.
 
- ![adt-abap-menu](adt-abap-menu.png)
+![Checkyourself](cat and dog.png)
+ [portal.azure.com](portal.azure.com)
 
-And select **ABAP** and click **Open**.
 
- ![perspective](perspective.png)
+!![Checkyourself](cat and dog.png)
+ 
+[DONE]
+[ACCORDION-END]
 
-Or select the icon.
+[ACCORDION-BEGIN [Step 2: ](Create ABAP package)]
+  1. Maintain following information in the appearing dialog and  click **Next**.
 
- ![adt-abap-icon](adt-abap-icon.png)
+      - Name: **`Z_Booking_XXX`**
+      - Description: **Package Booking**
+
+      ![Create ABAP package](package2.png)
+
+  2. Move on with **Next**.
+
+      ![Create ABAP package](package3.png)
+
+  3. Select transport request and click **Finish**.
+
+      ![Create ABAP package](package4.png)
+      
+      ![Checkyourself](cat_and_dog.png)
+
+
+      !![Checkyourself](cat and dog.png)
+
+
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 2: ](Create an ABAP Cloud project)]
-1. In the ADT, select the menu path **File** > **New** > **Other**.
+[ACCORDION-BEGIN [Step 3: ](Open ABAP repository object)]
+Right-click on your package and navigate to **New** > **Other ABAP Repository Object** from the appearing context menu.
 
-    ![Create an ABAP Cloud project in ADT](other.png)
-
-2. Search for ABAP Cloud Project, select it and click **Next**.
-
-    ![Select ABAP Cloud Project](abap.png)
-
-3. Select **Use Cloud Foundry Environment** in section **SAP BTP Cloud Foundry Environment** and click **Next >**
-
-    ![Create ABAP cloud project](servicekey.png)
-
-4. Enter your **connection settings**:
-     - Region: choose your SAP BTP Cloud Foundry Environment region, for e.g. Europe (Frankfurt)
-     - Email: your email address
-     - Password: your password    
-
-    ![Create ABAP cloud project](projectx12.png)
-
-      Click **Next >**.
-
-5. Set your **service instance details**:                                                                                             
-     - Organization: `<your_organization>`
-     - Space: dev
-     - Service instance: `<your_service_instance>`
-
-    ![Create ABAP cloud project](projectx22.png)
-
-    Click **Next >**.
-
-    >**HINT:** Your service instance is **`default_abap-trial`** when you use the **ABAP trial booster** on SAP BTP. If you create a manual instance, use your own instance name.
-
-6. Click **Open Logon Page in Browser**.
-
-    ![Create ABAP cloud project](project4.png)
-
-7. Now you've been authenticated automatically. Provide your credentials if requested. The credentials are the same you used to create your trial account on SAP BTP.
-
-    Go back to ADT.
-
-    ![Create ABAP cloud project](project52.png)
-
-    Click **Finish**.
+![Open ABAP repository object](object.png)
 
 [DONE]
 [ACCORDION-END]
 
+[ACCORDION-BEGIN [Step 4: ](Create database table)]
+  1. Search for **database table**, select the appropriate entry and click **Next**.
 
+      ![Create database table](db.png)
+  2. Maintain the required information and click **Next**.
 
-[ACCORDION-BEGIN [Step 3: ](Create ABAP package)]
-  1. Right-click on the `ZLOCAL` and select **New** > **ABAP Package** from the context menu.
+      - Name: **`ZTBOOKING_XXX`**
+      - Description: **Table Booking**
 
-      ![Add ABAP package](package.png)
+      ![Create database table](db2.png)
 
-  2. Provide the required information and move on with **Next**.
-      - Name: **`ZPACKAGE_XXX`**
-      - Description: My Package XXX
-      - **Check** Add to favorite packages.
+  3. On the next dialog, provide a transport request and click **Finish**.
 
-      ![Create ABAP package](abappackage.png)
+      ![Create database table](db3.png)
 
-      Click **Next >**.
+  4. Check result. An empty table is now created.
 
-  3. Create a new request and click **Finish**.
-
-      ![Select transport request](transport.png)
-
-     The ABAP package is now created.
+      ![Check code](empty.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Create new ABAP class)]
-  1. Add a new ABAP class to your package.
+[ACCORDION-BEGIN [Step 5: ](Define database table)]
+  1. Define the table columns (client, booking, `customername`, `numberofpassengers`, …). Specify client and booking as key fields, and the field `currencycode` as currency key for cost as displayed below. The table annotations (beginning with @) remain unchanged. For that, you can copy the database table definition provided below.
+ [portal.azure.com](portal.azure.com)
+    ```ABAP
 
-      ![Add new ABAP class](class.png)
+    @EndUserText.label : 'Demo: Booking Data'
+    @AbapCatalog.enhancementCategory : #NOT_EXTENSIBLE
+    @AbapCatalog.tableCategory : #TRANSPARENT
+    @AbapCatalog.deliveryClass : #A
+    @AbapCatalog.dataMaintenance : #LIMITED
+    define table ztbooking_xxx {
+    key client         : abap.clnt not null;
+    key booking        : abap.int4 not null;
+    customername       : abap.char(50);
+    numberofpassengers : abap.int2;
+    emailaddress       : abap.char(50);
+    country            : abap.char(50);
+    dateofbooking      : timestampl;
+    dateoftravel       : timestampl;
+    @Semantics.amount.currencyCode : 'ztbooking_xxx.currencycode'
+    cost               : abap.curr(15,2);
+    currencycode       : abap.cuky;
+    lastchangedat      : timestampl;
+    }
 
-  2. Maintain the required information and click **Next** to move on:   
-      - Name: **`Z_CLASS_XXX`**
-      - Description: My class XXX
+    ```
 
-      ![Add new ABAP class](abapclass.png)
+  2. Save and activate the database table.
 
-      Click **Next >**.
-
-  3. Click **Finish**.
-
-      ![Select transport request](request.png)
-
-  4. Your class is now created.
-
-      ![Select transport request](emptyclass.png)
+      ![Define database table](saveandactivate.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Implement Interface)]
-  1. In the class definition, specify the interface `IF_OO_ADT_CLASSRUN` in the public section as shown on the screenshot. Now go to the class implementation and provide the implementation of the method `IF_OO_ADT_CLASSRUN~MAIN`. As shown on the screenshot, it should output the text Hello World! using the code line below
-`out->write('Hello World!').`
+[ACCORDION-BEGIN [Step 6: ](Create ABAP class)]
+  1. Create a class in order to `prefill` our created database table. Right-click on your package and navigate to **New** > **ABAP Class** in the appearing context menu.
+ [portal.azure.com](portal.azure.com)
+      ![Create ABAP class](class.png)
+
+  2. Provide the required information and click **Next**.
+https://issues.wdf.sap.corp/browse/DEVMS-2654
+
+    - Name: **`ZCL_GENERATE_BOOKINGS_XXX`**
+    - Description: **Class to generate bookings**
+
+      ![Create ABAP class](class2.png)
+
+  3. Provide a transport request and click **Finish**.
+
+      ![Create ABAP class](class3.png)
+
+[DONE]
+[ACCORDION-END]
+
+[ACCORDION-BEGIN [Step 7: ](Replace source code)]
+  1. Replace the source code of your class with the one provided below:
 
     ```ABAP
-    CLASS z_class_xxx DEFINITION
+
+    CLASS zcl_generate_bookings_xxx DEFINITION
       PUBLIC
       FINAL
       CREATE PUBLIC .
@@ -162,34 +155,75 @@ Or select the icon.
       PRIVATE SECTION.
     ENDCLASS.
 
-    CLASS z_class_xxx IMPLEMENTATION.
+
+    CLASS zcl_generate_bookings_xxx IMPLEMENTATION.
+
       METHOD if_oo_adt_classrun~main.
-        out->write('Hello world!').
+        DATA:it_bookings TYPE TABLE OF ztbooking_xxx.
+
+    *    read current timestamp
+        GET TIME STAMP FIELD DATA(zv_tsl).
+    *   fill internal table (itab)
+        it_bookings = VALUE #(
+            ( booking  = '1' customername = 'Buchholm' numberofpassengers = '3' emailaddress = 'tester1@flight.example.com'
+              country = 'Germany' dateofbooking ='20180213125959' dateoftravel ='20180213125959' cost = '546' currencycode = 'EUR' lastchangedat = zv_tsl )
+            ( booking  = '2' customername = 'Jeremias' numberofpassengers = '1' emailaddress = 'tester2@flight.example.com'
+              country = 'USA' dateofbooking ='20180313125959' dateoftravel ='20180313125959' cost = '1373' currencycode = 'USD' lastchangedat = zv_tsl )
+         ).
+
+    *   Delete the possible entries in the database table - in case it was already filled
+        DELETE FROM ztbooking_xxx.
+    *   insert the new table entries
+        INSERT ztbooking_xxx FROM TABLE @it_bookings.
+
+    *   check the result
+        SELECT * FROM ztbooking_xxx INTO TABLE @it_bookings.
+        out->write( sy-dbcnt ).
+        out->write( 'data inserted successfully!').
+
       ENDMETHOD.
+
     ENDCLASS.
+
+
     ```
 
-  2. Save and activate your changes.
+  2. Save and active your class.
 
-      ![Implement an Interface](saveandactivate.png)
-
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 6: ](Execute ABAP application)]
-  1. Right-click your class and select **Run As** > **ABAP Application (Console)** or select your class and press **`F9`**.
-
-      ![Execute ABAP application](console.png)
-
-  2. Check your result.
-
-      ![Execute ABAP application](result.png)
+      ![Replace source code](saveandactivate.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 7: ](Test yourself)]
-Write only the write statement with following information: Hello SAP Cloud Platform ABAP Environment!
+[ACCORDION-BEGIN [Step 8: ](Run ABAP application)]
+  1. Run your class as an ABAP application (console) or press **F9**.
 
-[VALIDATE_1]
+      ![Run ABAP application](application.png)
+
+  2. Check console output.
+
+      ![Check console output](output.png)
+
+  3. Switch back to your data definition and press **F8** to see the inserted data.
+
+      ![Check inserted data](data.png)
+
+  4. Now check your result.
+
+      ![Check inserted data](result.png)
+
+[DONE]
+[ACCORDION-END]
+
+[ACCORDION-BEGIN [Step 9: ](Test yourself)]
+Define a table (without metadata) with following information in the correct order:
+
+ - Name: `ztestyourself`
+ - Key-Element: `key client`: `abap.clnt not null`
+ - Elements:
+    - `customername`: `abap.char(50)`
+    - `country`: `abap.char(50)`
+    - `emailaddress`: `abap.char(50)`
+
+[DONE]
 [ACCORDION-END]
