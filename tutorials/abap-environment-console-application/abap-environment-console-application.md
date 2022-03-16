@@ -10,7 +10,7 @@ author_profile: https://github.com/mervey45
 
 ## Details
 ### You will learn
-- How to create a database table
+- How to create a datassbase table
 - How to `prefill` your database table with data
 
 In this tutorial, wherever `XXX` appears, use a number (e.g. `000`).
