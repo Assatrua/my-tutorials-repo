@@ -6,7 +6,6 @@ tags: [tutorial>beginner, topic>api, software-product>Analytics, topic>Business-
 time: 130
 author_name: Merves Temels VII
 author_profile: https://github.com/mervey45
-creator_name: Assatrua228
 ---
 
 ## Details
