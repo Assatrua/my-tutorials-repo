@@ -7,7 +7,6 @@ time: 130
 author_name: Merves Temels VII
 author_profile: https://github.com/mervey45
 creator_name: Assatrua228
-creator_profile: https://github.com/mervey45
 ---
 
 ## Details
