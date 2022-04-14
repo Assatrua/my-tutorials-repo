@@ -1,5 +1,5 @@
 ---
-title: New title
+title: New title 228
 description: Create a database table in SAP Cloud Platform ABAP Environment and prefill it with data. 
 primary_tag: products>sap-hana-cloud
 tags: [tutorial>beginner, topic>api, software-product>Analytics, topic>Business-Development]
