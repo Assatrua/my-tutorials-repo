@@ -1,229 +1,173 @@
 ---
-title: New title 228
-description: Create a database table in SAP Cloud Platform ABAP Environment and prefill it with data. 
-primary_tag: products>sap-hana-cloud
-tags: [tutorial>beginner, topic>api, software-product>Analytics, topic>Business-Development]
-time: 130
-author_name: Merves Temels V
-author_profile: https://github.com/mervey45
+title: Visualize Data from the Northwind Service
+description: Learn how to visualize data with a VizFrame.
+auto_validation: true
+time: 20
+tags: [ tutorial>beginner, programming-tool>sapui5, software-product>sap-launchpad-service, software-product>sap-fiori, topic>user-interface, programming-tool>html5, topic>cloud, tutorial>free-tier]
+primary_tag: programming-tool>odata
+author_name: Nico Geburek
+author_profile: https://github.com/nicogeburek
 ---
+
+## Prerequisites
+- You have previously created a SAPUI5 based project, e.g. with the [easy-ui5 generator](sapui5-fiori-cf-create-project).
+- You have [added the Northwind Service as a data source and default model](sapui5-fiori-cf-display-data) to your application.
+- You have version 3.1.4 or higher of the [easy-ui5 generator](cp-cf-sapui5-local-setup) installed.
 
 ## Details
 ### You will learn
-- How to create a datassbase table
-- How to `prefill` your database table with data
-
-In this tutorial, wherever `XXX` appears, use a number (e.g. `000`).
+  - How to use a sub-generator to add a new view
+  - How to add a `VizFrame` to visualize data
+  - How to manually navigate between SAPUI5 views
 
 ---
 
-[ACCORDION-BEGIN [Step 1: ](Open Eclipse)]
-Open Eclipse, and select **New** > **ABAP Package**.
+[ACCORDION-BEGIN [Step : ](Add a new view)]
 
-![Checkyourself](cat and dog.png)
- [portal.azure.com](portal.azure.com)
+Add a new view to your SAPUI5 application by using an `easy-ui5` sub-generator.
 
+**Open** a new terminal session on root level of your project and execute:
 
-!![Checkyourself](cat and dog.png)
- 
-[DONE]
-[ACCORDION-END]
+```Terminal
+yo easy-ui5 project newview
+```
 
-[ACCORDION-BEGIN [Step 2: ](Create ABAP package)]
-  1. Maintain following information in the appearing dialog and  click **Next**.
+|  Parameter     | Value
+|  :------------- | :-------------
+|  What is the name of the new view?         | **`Sales`**
+|  Would you like to create a corresponding controller as well?     | **`Yes`**
+|  Do you want to add an OPA5 page object?  | **`No`**
+|  Would you like to create a route in the manifest?  | **`Yes`**
 
-      - Name: **`Z_Booking_XXX`**
-      - Description: **Package Booking**
-
-      ![Create ABAP package](package2.png)
-
-  2. Move on with **Next**.
-
-      ![Create ABAP package](package3.png)
-
-  3. Select transport request and click **Finish**.
-
-      ![Create ABAP package](package4.png)
-      
-      ![Checkyourself](cat_and_dog.png)
-
-
-      !![Checkyourself](cat and dog.png)
-
-
+The routes are added to the `uimodule/webapp/manifest.json` file. The generator asks you whether you want to overwrite the `manifest.json` file, which is necessary in this case, so type `yes` when prompted.
 
 [DONE]
 [ACCORDION-END]
+[ACCORDION-BEGIN [Step : ](Inspect the modifications)]
 
-[ACCORDION-BEGIN [Step 3: ](Open ABAP repository object)]
-Right-click on your package and navigate to **New** > **Other ABAP Repository Object** from the appearing context menu.
+As you can see in the log, the generator created a new view with its corresponding controller. It also modified the `uimodule/webapp/manifest.json` by adding a new route as well as a new target. You can see the pattern for the new `Sales` route is `RouteSales`. This is the piece that we will later attach to the URL of our application to reach this view.
 
-![Open ABAP repository object](object.png)
-
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 4: ](Create database table)]
-  1. Search for **database table**, select the appropriate entry and click **Next**.
-
-      ![Create database table](db.png)
-  2. Maintain the required information and click **Next**.
-
-      - Name: **`ZTBOOKING_XXX`**
-      - Description: **Table Booking**
-
-      ![Create database table](db2.png)
-
-  3. On the next dialog, provide a transport request and click **Finish**.
-
-      ![Create database table](db3.png)
-
-  4. Check result. An empty table is now created.
-
-      ![Check code](empty.png)
+![screen shot of manifest with new route](manifest.png)
 
 [DONE]
 [ACCORDION-END]
+[ACCORDION-BEGIN [Step : ](Add the VizFrame)]
 
-[ACCORDION-BEGIN [Step 5: ](Define database table)]
-  1. Define the table columns (client, booking, `customername`, `numberofpassengers`, …). Specify client and booking as key fields, and the field `currencycode` as currency key for cost as displayed below. The table annotations (beginning with @) remain unchanged. For that, you can copy the database table definition provided below.
- [portal.azure.com](portal.azure.com)
-    ```ABAP
+The `webapp/view/Sales.view.xml` will hold the `VizFrame` that visualizes the data from the Northwind Service. **Remove** the entire content view and replace it with the below code.
 
-    @EndUserText.label : 'Demo: Booking Data'
-    @AbapCatalog.enhancementCategory : #NOT_EXTENSIBLE
-    @AbapCatalog.tableCategory : #TRANSPARENT
-    @AbapCatalog.deliveryClass : #A
-    @AbapCatalog.dataMaintenance : #LIMITED
-    define table ztbooking_xxx {
-    key client         : abap.clnt not null;
-    key booking        : abap.int4 not null;
-    customername       : abap.char(50);
-    numberofpassengers : abap.int2;
-    emailaddress       : abap.char(50);
-    country            : abap.char(50);
-    dateofbooking      : timestampl;
-    dateoftravel       : timestampl;
-    @Semantics.amount.currencyCode : 'ztbooking_xxx.currencycode'
-    cost               : abap.curr(15,2);
-    currencycode       : abap.cuky;
-    lastchangedat      : timestampl;
-    }
+```XML
+ <mvc:View
+  controllerName="tutorial.products.controller.Sales"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
 
-    ```
+  xmlns:layout="sap.ui.layout"
+  xmlns:viz="sap.viz.ui5.controls"
+  xmlns:viz.data="sap.viz.ui5.data"
+  xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
 
-  2. Save and activate the database table.
+  <Page title="{i18n>title}" id="Sales" >
+    <content>
+      <layout:FixFlex id="chartFixFlex" minFlexSize="250">
+        <layout:flexContent>
+            <viz:Popover id="idPopOver" connect="idVizFrame"></viz:Popover>
+            <viz:VizFrame
+              id="idVizFrame"
+              uiConfig="{applicationSet:'fiori'}"
+              height="100%"
+              width="100%"
+              vizType="timeseries_line"
+              vizProperties="{
+                                title: {
+                                    text: 'Sales by Years'
+                                },
+                                plotArea: {
+                                  dataLabel: {
+                                      visible: false
+                                  },
+                                  window: {
+                                      start: 'firstDataPoint',
+                                      end: 'lastDataPoint'
+                                  }
+                                }                                 
+                              }" >
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/Summary_of_Sales_by_Years}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition
+                              name="ShippedDate"
+                              value="{ShippedDate}"
+                              dataType="date"/>
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition
+                              name="Subtotal"
+                              value="{Subtotal}"/>
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+                <viz:feeds>
+                    <viz.feeds:FeedItem
+                      id="valueAxisFeed"
+                      uid="valueAxis"
+                      type="Measure"
+                      values="Subtotal" />
+                    <viz.feeds:FeedItem
+                      id="timeAxisFeed"
+                      uid="timeAxis"
+                      type="Dimension"
+                      values="ShippedDate" />
+                </viz:feeds>
+            </viz:VizFrame>
+        </layout:flexContent>
+      </layout:FixFlex>
+    </content>
+  </Page>
+</mvc:View>
+```
 
-      ![Define database table](saveandactivate.png)
+This new code uses additional SAPUI5 libraries that are referenced at the top of the file. These are necessary in order to use the layout and `VizFrame` related controls. If you look at the code closely, you will notice that it defines a new `VizFrame` of type `timeseries_line`. The dataset (`FlattenedDataSet`) is bound to the `/Summary_of_Sales_by_Years` entity of the Northwind OData Service. The dimension (`DimensionDefinition`) is `ShippedDate`, which represents time and is therefore of type `date`. The measure (`MeasureDefinition`) is the `Subtotal` of sales.
 
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 6: ](Create ABAP class)]
-  1. Create a class in order to `prefill` our created database table. Right-click on your package and navigate to **New** > **ABAP Class** in the appearing context menu.
- [portal.azure.com](portal.azure.com)
-      ![Create ABAP class](class.png)
-
-  2. Provide the required information and click **Next**.
-https://issues.wdf.sap.corp/browse/DEVMS-2654
-
-    - Name: **`ZCL_GENERATE_BOOKINGS_XXX`**
-    - Description: **Class to generate bookings**
-
-      ![Create ABAP class](class2.png)
-
-  3. Provide a transport request and click **Finish**.
-
-      ![Create ABAP class](class3.png)
-
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 7: ](Replace source code)]
-  1. Replace the source code of your class with the one provided below:
-
-    ```ABAP
-
-    CLASS zcl_generate_bookings_xxx DEFINITION
-      PUBLIC
-      FINAL
-      CREATE PUBLIC .
-
-      PUBLIC SECTION.
-        INTERFACES if_oo_adt_classrun.
-      PROTECTED SECTION.
-      PRIVATE SECTION.
-    ENDCLASS.
-
-
-    CLASS zcl_generate_bookings_xxx IMPLEMENTATION.
-
-      METHOD if_oo_adt_classrun~main.
-        DATA:it_bookings TYPE TABLE OF ztbooking_xxx.
-
-    *    read current timestamp
-        GET TIME STAMP FIELD DATA(zv_tsl).
-    *   fill internal table (itab)
-        it_bookings = VALUE #(
-            ( booking  = '1' customername = 'Buchholm' numberofpassengers = '3' emailaddress = 'tester1@flight.example.com'
-              country = 'Germany' dateofbooking ='20180213125959' dateoftravel ='20180213125959' cost = '546' currencycode = 'EUR' lastchangedat = zv_tsl )
-            ( booking  = '2' customername = 'Jeremias' numberofpassengers = '1' emailaddress = 'tester2@flight.example.com'
-              country = 'USA' dateofbooking ='20180313125959' dateoftravel ='20180313125959' cost = '1373' currencycode = 'USD' lastchangedat = zv_tsl )
-         ).
-
-    *   Delete the possible entries in the database table - in case it was already filled
-        DELETE FROM ztbooking_xxx.
-    *   insert the new table entries
-        INSERT ztbooking_xxx FROM TABLE @it_bookings.
-
-    *   check the result
-        SELECT * FROM ztbooking_xxx INTO TABLE @it_bookings.
-        out->write( sy-dbcnt ).
-        out->write( 'data inserted successfully!').
-
-      ENDMETHOD.
-
-    ENDCLASS.
-
-
-    ```
-
-  2. Save and active your class.
-
-      ![Replace source code](saveandactivate.png)
+You can read more about `VizFrame`s in the [SAPUI5 API Reference](https://sapui5.hana.ondemand.com/#/api/sap.viz.ui5.controls.VizFrame%23overview) and check out some samples in the [SAPUI5 Samples](https://sapui5.hana.ondemand.com/#/entity/sap.viz.ui5.controls.VizFrame). `VizFrame`s even have their own [documentation](https://sapui5.hana.ondemand.com/docs/vizdocs/index.html) that lists all available properties, events, bindings, and scales.
 
 [DONE]
 [ACCORDION-END]
+[ACCORDION-BEGIN [Step : ](Navigate to the new view)]
 
-[ACCORDION-BEGIN [Step 8: ](Run ABAP application)]
-  1. Run your class as an ABAP application (console) or press **F9**.
+In order to see the new view in your application in the browser, you have to navigate there manually using the pattern you already inspected in step 2. If your application is running in a Fiori Launchpad, attach `&/RouteSales` to the URL. If your application runs standalone, attach `#/RouteSales` to the URL. There is a difference between these two scenarios, because your application in the Fiori Launchpad already requires a hash (`#`) to navigate to it and there is only one hash allowed in a URL.
 
-      ![Run ABAP application](application.png)
-
-  2. Check console output.
-
-      ![Check console output](output.png)
-
-  3. Switch back to your data definition and press **F8** to see the inserted data.
-
-      ![Check inserted data](data.png)
-
-  4. Now check your result.
-
-      ![Check inserted data](result.png)
+![screen shot of sales view in the browser](salesview.png)
 
 [DONE]
 [ACCORDION-END]
+[ACCORDION-BEGIN [Step : ](Implement a popover)]
 
-[ACCORDION-BEGIN [Step 9: ](Test yourself)]
-Define a table (without metadata) with following information in the correct order:
+You might have noticed that you can hover over the single data points of the line chart and click them, but nothing happens yet. Insert the below `onAfterRendering` method into the `Sales.controller.js` to connect the `VizFrame` with the popover, which is already defined in the `uimodule/webapp/view/Sales.view.xml` (step 3).
 
- - Name: `ztestyourself`
- - Key-Element: `key client`: `abap.clnt not null`
- - Elements:
-    - `customername`: `abap.char(50)`
-    - `country`: `abap.char(50)`
-    - `emailaddress`: `abap.char(50)`
+```javascript [7-11]
 
-[DONE]
+sap.ui.define([
+    "tutorial/products/controller/BaseController"
+], function (Controller) {
+    "use strict";
+
+    return Controller.extend("tutorial.products.controller.Sales", {
+        onAfterRendering: function () {
+            const oVizFrame = this.oVizFrame = this.getView().byId("idVizFrame");
+            const oPopOver = this.getView().byId("idPopOver");
+            oPopOver.connect(oVizFrame.getVizUid());
+        }
+    });
+});
+```
+
+After saving the file, your browser should automatically refresh the page. You can now click on any data point to get the popover with its exact data.
+
+![screen shot of popover](popover.png)
+
+[VALIDATE_1]
 [ACCORDION-END]
+
+
+---
