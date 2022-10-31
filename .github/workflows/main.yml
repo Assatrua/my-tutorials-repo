@@ -1,6 +1,17 @@
 
 name: Autocloser
-on: [issues]
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 jobs:
   autoclose:
     runs-on: ubuntu-latest
