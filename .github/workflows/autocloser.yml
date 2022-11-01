@@ -1,6 +1,6 @@
 name: Autocloser
 on: 
-  workflow_dispatch:
+  workflow_dispatch
   
 jobs:
   autoclose:
