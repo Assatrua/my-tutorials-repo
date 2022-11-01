@@ -1,6 +1,7 @@
 name: Close inactive issues
 on:
-  workflow_dispatch
+  schedule:
+    - cron: '*/30 * * * *'
 
 jobs:
   close-issues:
@@ -12,5 +13,5 @@ jobs:
         with:
           days-before-issue-close: 0
           close-issue-message: "This issue was closed."
-          operations-per-run: 1000
+          operations-per-run: 500
           repo-token: ${{ secrets.GITHUB_TOKEN }}
