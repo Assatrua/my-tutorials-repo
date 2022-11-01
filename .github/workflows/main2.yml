@@ -1,27 +1,18 @@
+name: Close inactive issues
 on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
+  workflow_dispatch
 
 jobs:
-  log-the-inputs:
+  close-issues:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
-      - run: |
-          echo "Log level: $LEVEL"
-          echo "Tags: $TAGS"
-        env:
-          LEVEL: ${{ inputs.logLevel }}
-          TAGS: ${{ inputs.tags }}
+      - uses: actions/stale@v5
+        with:
+          days-before-issue-stale: 2
+          days-before-issue-close: 2
+          stale-issue-label: "TEST"
+          stale-issue-message: "This issue is stale because it has been open for 30 days with no activity."
+          close-issue-message: "This issue was closed because it has been inactive for 14 days since being marked as stale."
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
