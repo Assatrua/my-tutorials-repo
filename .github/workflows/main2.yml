@@ -10,9 +10,6 @@ jobs:
     steps:
       - uses: actions/stale@v5
         with:
-          days-before-issue-stale: 2
-          days-before-issue-close: 2
-          stale-issue-label: "TEST"
-          stale-issue-message: "This issue is stale because it has been open for 30 days with no activity."
+          days-before-issue-close: 0
           close-issue-message: "This issue was closed because it has been inactive for 14 days since being marked as stale."
           repo-token: ${{ secrets.GITHUB_TOKEN }}
