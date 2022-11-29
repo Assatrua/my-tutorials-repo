@@ -1,7 +1,7 @@
 ---
 
 title: Create an HTTP Service  
-description: Create an HTTP service in the ABAP environment that can be called from the browser.
+description: Create aыn HTTP service in the ABAP environment that can be called from the browser.
 auto_validation: true
 time: 15
 tags: [ tutorial>beginner, software-product>sap-btp--abap-environment, software-product>sap-business-technology-platform, topic>abap-connectivity, tutorial>license]
