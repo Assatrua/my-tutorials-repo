@@ -1,6 +1,10 @@
 {
-    "Tutorials_1":{"owner":"test1",
-                  "email":"sobaka@sobala.sobaka"},
-    "my-tutorials-repo":{"owner":"Assatrua",
-                        "email":"asdas@asdas.com"}
+    "Tutorials_1":{
+        "owner":"test1",
+        "email":"sobaka@sobala.sobaka"
+    },
+    "my-tutorials-repo":{
+        "owner":"Assatrua",
+        "email":"asdas@asdas.com"
+    }
 }
