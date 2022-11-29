@@ -1,4 +1,6 @@
 {
-    "Tutorials_1":"test1",
-    "my-tutorials-repo":"Assatrua"
+    "Tutorials_1":{"owner":"test1",
+                  "email":"sobaka@sobala.sobaka"},
+    "my-tutorials-repo":{"owner":"Assatrua",
+                        "email":"asdas@asdas.com"}
 }
