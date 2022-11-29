@@ -1,10 +1,8 @@
 {
     "Tutorials_1":{
-        "owner":"new Owner",
-        "email":"sobaka@sobala.sobaka"
+        "owner":"new Owner"
     },
     "my-tutorials-repo":{
-        "owner":"Assatrua22",
-        "email":"asdas@asdas.com"
+        "owner":"Assatrua22"
     }
 }
