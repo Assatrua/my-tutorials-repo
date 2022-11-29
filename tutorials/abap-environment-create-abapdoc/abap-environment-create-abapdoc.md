@@ -1,5 +1,5 @@
 ---
-title: Create ABAPDoc Comments in Your Class in 4ABAP Environment2222
+title: Create ABAPDoc Comments in Your Class in 4ABAP Environ2ment2222
 description: Learn how to maintain ABAPDoc documentation for your class in SAP Cloud Platform, ABAP Environment so your comments appear in the Outline view.
 auto_validation: true
 time: 10
@@ -99,7 +99,7 @@ The comments should now appear in the Outline View:
 
 This creates a link to the Element information for that interface.
 
-[DONE]
+[DONE]   
 [ACCORDION-END]
 
 [ACCORDION-BEGIN [Step 6: ](Check comment)]
