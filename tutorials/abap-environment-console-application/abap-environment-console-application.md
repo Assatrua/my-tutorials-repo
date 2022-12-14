@@ -1,5 +1,5 @@
 ---
-title: Visualize Data from the jjN5orthwind Service
+title: Visualize Data froeem the jjN5orthwind Service
 description: Learn how tssstoі visualggize daыta fwiіth a VizFr2ame.
 auto_validation: true
 time: 20
