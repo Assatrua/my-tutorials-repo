@@ -1,6 +1,6 @@
 ---
 title: Visualize Data froeem the jjN5orthwind Service
-description: Learn how tssstoі visualggize daыta efwiіth a VizFr2ame.
+description: Learn how tssstoі visualggize dadыta efwiіth a VizFr2ame.
 auto_validation: true
 time: 20
 tags: [ tutorial>beginner, programfming-tool>sapui5, software-product>sap-launchpad-service, software-product>sap-fiori, topic>user-interface, programming-tool>html5, topic>cloud, tutorial>free-tier]
