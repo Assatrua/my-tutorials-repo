@@ -1,8 +1,11 @@
 {
-    "Tutorials_1":{
-        "owner":"new Owner22"
-    },
-    "my-tutorials-repo":{
-        "owner":"OWNER"
-    }
+  "my-tutorials-repo":{
+    "name":"notAssatrua"
+  },
+    "TestGreen":{
+    "name":"Oleksandra2"
+  },
+    "Tutorials_Alyona":{
+    "name":"AlyonSh"
+  }
 }
