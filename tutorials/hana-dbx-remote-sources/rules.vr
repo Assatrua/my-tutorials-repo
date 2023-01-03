@@ -1,0 +1,98 @@
+[VALIDATE_1]
+###Rule
+exact-match
+###Question
+exact-match rule
+Answer:
+test
+###Match
+test
+[VALIDATE_1]
+
+[VALIDATE_2]
+###Rule
+regex-substring
+###Question
+regex-sub-string
+test1:
+Test2
+###Match
+test1
+Test2
+[VALIDATE_2]
+
+[VALIDATE_3]
+###Rule
+regex-begins-with
+###Question
+regex-begins-with
+begins with
+###Match
+begins with
+[VALIDATE_3]
+
+[VALIDATE_4]
+###Rule
+regex-with-id-exact-match
+###Question
+regex-with-id-exact-match
+Enter URL to your application //[id] will be changed to uid
+https://codejam[id]trail.hanatrial.ondemand.com/codejam/mylibrary.xsjs
+###Match
+https://codejam[id]trail.hanatrial.ondemand.com/codejam/mylibrary.xsjs
+[VALIDATE_4]
+
+[VALIDATE_5]
+###Rule
+http-status-check
+###Question
+with 404
+EX: https://github.com/user/user/user
+###Match
+404
+[VALIDATE_5]
+
+[VALIDATE_6]
+###Rule
+http-status-check
+###Question
+with 301 or 401
+Ex: https://developers-qa.sap.com/
+###Match
+301, 401
+[VALIDATE_6]
+
+[VALIDATE_7]
+###Rule
+single-choice
+###Question
+The text of question for single-choice
+###Match
+[ ] Answer 1
+[ ] Answer 2
+[x] Answer 3
+[ ] Answer 4
+[VALIDATE_7]
+
+[VALIDATE_8]
+###Rule
+multiple-choice
+###Question
+The text of question for multi-choice
+###Match
+[x] Answer 1
+[ ] Answer 2
+[x] Answer 3
+[ ] Answer 4
+[VALIDATE_8]
+
+[VALIDATE_9]
+###Rule
+http-status-check
+###Question
+with 200
+Ex: https://www.google.com
+###Match
+200
+[VALIDATE_9]
+
