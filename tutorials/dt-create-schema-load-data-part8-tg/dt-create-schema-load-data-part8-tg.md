@@ -4,8 +4,8 @@ description: Create Multi-Store Tables
 auto_validation: true
 primary_tag: products>sap-hana-dynamic-tiering
 tags: [tutorial>beginner, products>sap-hana, products>sap-hana-dynamic-tiering, products>sap-hana-studio, topic>big-data, topic>sql ]
-author_name: Oleksandra Kovtunenko
-author_profile: https://github.com/Oleksandra2
+author_name: Yevhen Hura
+author_profile: https://github.com/Assatrua
 ---
 ## Prerequisites
  - **Proficiency:** Beginner
