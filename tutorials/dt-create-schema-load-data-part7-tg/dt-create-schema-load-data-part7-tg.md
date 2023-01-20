@@ -4,6 +4,8 @@ description: Create and use a SQL view to query data from both in-memory and Dyn
 auto_validation: true
 primary_tag: products>sap-ai-core
 tags: [  tutorial>beginner, products>sap-hana, products>sap-hana-dynamic-tiering, products>sap-hana-studio, topic>big-data, topic>sql, tutorial>license ]
+author_name: Oleksandra Kovtunenko
+author_profile: https://github.com/Oleksandra2
 ---
 ## Prerequisites
  - **Proficiency:** Beginner
