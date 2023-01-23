@@ -19,10 +19,7 @@ You'll learn how to start the VM, change the VM default keyboard layout, and cha
 
 ---
 
-## Intro
-If you don't change the keyboard layout to match the physical keyboard of your host machine (referred to as your **laptop** in this documentation), you may encounter problems later when logging in.
-
-### Start your VM
+### Introduction
 
 
 Open your hypervisor application.
