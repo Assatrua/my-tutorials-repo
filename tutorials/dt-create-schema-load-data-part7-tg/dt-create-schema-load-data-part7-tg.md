@@ -1,73 +1,72 @@
 ---
-title: View Data Across Both In-Memory and Dynamic Tiering Tables Using a SQL View Test Green Pop-over Three
-description: Create and use a SQL view to query data from both in-memory and Dynamic Tiering tables.
-auto_validation: true
-primary_tag: products>sap-ai-core
-tags: [  tutorial>beginner, products>sap-hana, products>sap-hana-dynamic-tiering, products>sap-hana-studio, topic>big-data, topic>sql, tutorial>license ]
-author_name: Oleksandra Kovtunenko
-author_profile: https://github.com/Oleksandra2
+parser: v2
+author_name: John Currie
+primary_tag: tutorial>beginner
+tags: [ tutorial>beginner]
+time: 5
 ---
+
+# Set Keyboard and Time Zone
+<!-- description --> The VM defaults to an English (US) QWERTY keyboard, and the UTC time zone. When prompted, change the keyboard layout and time zone to match your location, or accept the defaults.
+
+<!-- loiod0775daa77ca4aaea29ea74b3e2e2ac1 -->
+
 ## Prerequisites
- - **Proficiency:** Beginner
- - **Tutorials:** [Migrate Records in Related Tables Using Stored Procedure](https://developers.sap.com/tutorials/dt-create-schema-load-data-part6.html)
+ - **Tutorials:**  You have completed [Import the OVA](hxe-ua-ova-vm) 
 
-## Next Steps
- - **Tutorials:** [Multi-Store Tables](https://developers.sap.com/tutorials/dt-create-schema-load-data-part8.html)
-
-## Details
-### You will learn
- - Viewing the combined data set for data partitioned between an in-memory and a Dynamic Tiering table instance.
- - Creating and using a SQL view.
- - Querying against a SQL view with conditions.
-
-### Time to Complete
-**5 Min**.
+## You will learn
+You'll learn how to start the VM, change the VM default keyboard layout, and change the default time zone.
 
 ---
 
-[ACCORDION-BEGIN [Step 1: ](Query From Both In-Memory and Dynamic Tiering Tables)]
-You may have many cases where you o dfnly need to access data either from the in-memory table instance (`ORDERS_CS`) or from the Dynamic Tiering table instance (`ORDERS_DT`). However you will also likely have use cases where you need to query the full data set across both table instances, which can be done with a union.
-Run the script below in a SQL Console to query data from both in-memory and Dynamic Tiering tables using a `UNION`.
+## Intro
+If you don't change the keyboard layout to match the physical keyboard of your host machine (referred to as your **laptop** in this documentation), you may encounter problems later when logging in.
 
-```sql
-SELECT * FROM "TPCH"."ORDERS_CS"
-UNION ALL
-SELECT * FROM "TPCH"."ORDERS_DT"
-```
->Note: Since we are explicitly managing the data set between `ORDERS_CS` and `ORDERS_DT` to ensure that data is not duplicated between the 2 tables, we can use the `UNION ALL` variation of the `UNION` clause, which is faster because it doesn't eliminate duplicate records in the combined result set.
-
-![Union](union.png)
-
-[DONE]
-
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 2: ](Create and Query against a SQL View)]
-Alternatively you can create an SQL view to query data from multiple tables and simplify the process. Run the script below to create a SQL view.
-
-```sql
-CREATE VIEW "TPCH"."ORDERS_ALL_VIEW" AS
-  SELECT * FROM "TPCH"."ORDERS_CS"
-  UNION ALL
-  SELECT * FROM "TPCH"."ORDERS_DT";
-```
-
-![Create View](create-view.png)
-
-Verify the script executed correctly.
-
-![Create View Success](create-view-success.png)
-
-After successfully creating a view, you can query against the `"TPCH"."ORDERS_ALL_VIEW"` whenever you need to access the combined data set. For example, if you want to query order records that are between 6 months and 18 months old, you can execute the query below.
-
-```sql
-SELECT "TPCH"."ORDERS_ALL_VIEW".* FROM "TPCH"."ORDERS_ALL_VIEW"
-    WHERE "TPCH"."ORDERS_ALL_VIEW" ."O_ORDERDATE"
-      BETWEEN ADD_YEARS(CURRENT_DATE, -1.5)
-          AND ADD_YEARS(CURRENT_DATE, -0.5)
-```
-
-![Query View](query-view.png)
+### Start your VM
 
 
-[ACCORDION-END]
+Open your hypervisor application.
+
+Power on (or click *Play* on) your SAP HANA 2.0, express edition VM.
+
+![hxe2_vm_start_0](hxe2_vm_start_0.png)
+
+
+### Change the keyboard layout if your laptop doesn't use an English (US) keyboard
+
+
+The system prompts you to either change the VM keyboard, or accept the default English (US) QWERTY keyboard. Enter `Y` to change the keyboard or `N` to use the default.
+
+> Note:
+> Having difficulty entering text in your virtual machine in `VMWare`? Press ` CTRL G ` to switch the focus from your host machine to the VM.
+> 
+> 
+
+![HXE_change_keyboard_prompt_5](HXE_change_keyboard_prompt_5.png)
+
+If you opt to change the keyboard, the System Keyboard Configuration page displays.
+
+![HXE_change_keyboard_GUI_PNG_1](HXE_change_keyboard_GUI_PNG_1.png)
+
+Use the arrow keys to scroll to the desired keyboard layout. `Tab` to the *OK* button, or press `F10`, to save your changes. A message displays while the system processes the keyboard layout change.
+
+![HXE_change_keyboard_process_PNG_2](HXE_change_keyboard_process_PNG_2.png) 
+
+
+### Change time zone
+
+
+Change the time zone if your laptop is not in the default UTC (GMT) time zone.
+
+Enter `Y` to change the time zone, or `N` to accept the default.
+
+![HXE_change_timezone_PNG_4](HXE_change_timezone_PNG_4.png)
+
+If you opt to change the timezone, the Clock and Time Zone page displays.
+
+![HXE_change_timezone_GUI_3](HXE_change_timezone_GUI_3.png)
+
+In the Region pane, use the arrow keys to scroll down to the correct region. `Tab` to the Time Zone pane and select the correct time zone. `Tab` to the *OK* button, or press `F10`, to save your changes.
+
+
+
