@@ -15,7 +15,7 @@ time: 5
  - **Tutorials:**  You have completed [Import the OVA](hxe-ua-ova-vm) 
 
 ## You will learn
-You'll learn how to start the VM, change the VM default keyboard layout, and change the default time zone.
+You'll learn how to start the VM, changef the VM default keyboard layout, and change the default time zone.
 
 ---
 
