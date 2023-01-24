@@ -19,7 +19,7 @@ You'll learn how to start the VM, changef the VM default keyboard layout, and ch
 
 ---
 
-### Introduction
+### Intoduction
 
 
 Open your hypervisor application.
@@ -30,6 +30,27 @@ Power on (or click *Play* on) your SAP HANA 2.0, express edition VM.
 
 
 ### Change the keyboard layout if your laptop doesn't use an English (US) keyboard
+
+
+![community-tour-2023](community-tour-2023.png)\
+<iframe width="560" height="315" src=https://www.youtube.com/embed/do_UT5NqAO0 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Text text text
+
+![community-tour-2023](community-tour-2023.png)
+---
+<iframe width="560" height="315" src=https://www.youtube.com/embed/do_UT5NqAO0 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![community-tour-2023](community-tour-2023.png)  
+
+<br/>  
+
+<figure class="video_container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bjp1_yvtR4Y" frameborder="0" allowfullscreen></iframe>
+</figure>
+
+
+
 
 
 The system prompts you to either change the VM keyboard, or accept the default English (US) QWERTY keyboard. Enter `Y` to change the keyboard or `N` to use the default.
