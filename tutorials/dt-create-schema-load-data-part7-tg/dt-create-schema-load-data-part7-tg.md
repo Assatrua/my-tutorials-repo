@@ -1,5 +1,6 @@
 ---
 parser: v2
+time: 500
 title: Automate Migration Records in Related Tables Using Stored Procedure Dev Green
 description: Using a stored procedure to migrate records in related tables as a single transaction.
 auto_validation: true
