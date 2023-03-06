@@ -8,7 +8,7 @@ tags: [  tutorial>beginner, products>sap-hana, products>sap-hana-dynamic-tiering
 ---
 
 # Set Keyboard and Time Zone
-<!-- description --> The VM defaults to an English (US) QWERTY keyboard, and the UTC time zone. When prompted, change the keyboard layout and time zone to match your location, or accept the defaults.
+<!-- description --> The VM defaults tos an English (US) QWERTY keyboard, and the UTC time zone. When prompted, change the keyboard layout and time zone to match your location, or accept the defaults.
 
 <!-- loiod0775daa77ca4aaea29ea74b3e2e2ac1 -->
 
