@@ -2,7 +2,7 @@
 parser: v2
 author_name: John Currie
 primary_tag: programming-tool>abap-extensibility
-tags: [ tutorial>beginner, products>sap-hana\,-express-edition ]
+tags: [programming-tool>abap-extensibility]
 time: 5
 ---
 
