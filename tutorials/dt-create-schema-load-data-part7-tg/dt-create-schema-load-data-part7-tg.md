@@ -33,41 +33,41 @@ Power on (or click *Play* on) your SAP HANA 2.0, express edition VM.
 
 TEXT TEXT TEXT
 
-```Shell (Microsoft Windows)
+>```Shell (Microsoft Windows)
 code block
-```
-text
-```Shell (Linux or Mac)
+>```
+>text
+>```Shell (Linux or Mac)
 code block
-```
+>```
+
+>```Shell (JAVA)
+code block
+>```
+
+>```Shell (.Net)
+code block
+>```
 
 ```Shell (JAVA)
 code block
 ```
 
-```Shell (.Net)
+>```Shell (.Net)
 code block
-```
+>```
 
-```Shell (JAVA)
+>```Shell (JAVA)
 code block
-```
+>```
 
-```Shell (.Net)
+>```Shell (.Net)
 code block
-```
+>```
 
-```Shell (JAVA)
-code block
-```
+>Text text text
 
-```Shell (.Net)
-code block
-```
-
-Text text text
-
-The system prompts you to either change the VM keyboard, or accept the default English (US) QWERTY keyboard. Enter `Y` to change the keyboard or `N` to use the default.
+>The system prompts you to either change the VM keyboard, or accept the default English (US) QWERTY keyboard. Enter `Y` to change the keyboard or `N` to use the default.
 
 > Note:
 > Having difficulty entering text in your virtual machine in `VMWare`? Press ` CTRL G ` to switch the focus from your host machine to the VM.
