@@ -2,7 +2,7 @@
 parser: v2
 author_name: John Currie
 primary_tag: programming-tool>abap-extensibility
-tags: [programming-tool>abap-extensibility]
+tags: [programming-tool>abap-extensibility,tutorial>beginner]
 time: 5
 ---
 
