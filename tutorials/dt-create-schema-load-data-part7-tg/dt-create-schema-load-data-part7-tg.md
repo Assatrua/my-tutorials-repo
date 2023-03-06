@@ -42,16 +42,12 @@ asdasdasd
 asdasdasdasd
 asdasdasd
 ```
-
-
-
 ```Shell (Linux or Mac)
 code block
 asdasdasd
 adasasdasdasd
 asdasdadsasdasdasdasd
 ```
-text
 ```Shell (JAVA)
 code block
 ```
