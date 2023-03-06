@@ -30,18 +30,21 @@ Power on (or click *Play* on) your SAP HANA 2.0, express edition VM.
 
 
 ### Change the keyboard layout if your laptop doesn't use an English (US) keyboard
+
 TEXT TEXT TEXT
+
 ```Shell (Microsoft Windows)
 code block
 ```
+text
 ```Shell (Linux or Mac)
 code block
 ```
-    
+
 ```Shell (JAVA)
 code block
 ```
-    
+
 ```Shell (.Net)
 code block
 ```
