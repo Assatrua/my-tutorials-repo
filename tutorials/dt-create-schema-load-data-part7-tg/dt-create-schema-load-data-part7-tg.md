@@ -35,32 +35,24 @@ TEXT TEXT TEXT
 
 ```Shell (Microsoft Windows)
 code block
+asdasd
+asdasdasd
+asdasdasdasd
+asdasdasd
 ```
-text
+
+
+
 ```Shell (Linux or Mac)
 code block
+asdasdasd
+adasasdasdasd
+asdasdadsasdasdasdasd
 ```
-
+text
 ```Shell (JAVA)
 code block
 ```
-
-```Shell (.Net)
-code block
-```
-
-```Shell (JAVA)
-code block
-```
-
-```Shell (.Net)
-code block
-```
-
-```Shell (JAVA)
-code block
-```
-
 ```Shell (.Net)
 code block
 ```
