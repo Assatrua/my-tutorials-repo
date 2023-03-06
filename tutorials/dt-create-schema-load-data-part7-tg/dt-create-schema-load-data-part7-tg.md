@@ -32,8 +32,20 @@ Power on (or click *Play* on) your SAP HANA 2.0, express edition VM.
 ### Change the keyboard layout if your laptop doesn't use an English (US) keyboard
 TEXT TEXT TEXT
 
-![community-tour-2023](community-tour-2023.png)
-<iframe width="560" height="315" src=https://www.youtube.com/embed/do_UT5NqAO0 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    ```Shell (Microsoft Windows)
+    code block
+    ```
+    ```Shell (Linux or Mac)
+    code block
+    ```
+    
+    ```Shell (JAVA)
+    code block
+    ```
+    
+    ```Shell (.Net)
+    code block
+    ```
 
 Text text text
 
