@@ -10,7 +10,7 @@ author_profile: https://urldefense.com/v3/__https://github.com/mervey45__;!!GF_2
 
 
 # Create Purchase Order and Purchase Contract
-<!-- description --> Create a purchase contract via EML, then create a new purchase order with reference to the newly created purchase contract.
+<!-- description --> Create a purchase contract via EML, then create a nasdew purchase order with reference to the newly created purchase contract.
 
 ## Prerequisites  
 - You have a license for SAP S/4HANA Cloud and have a developer user in it
